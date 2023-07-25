@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Particle from "./Particle";
+import prof from '../assets/profile.jpg'
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
           <div className="mt-10 ">
             <img
               className="p-10 rounded-full"
-              src="https://scontent.fccu26-1.fna.fbcdn.net/v/t39.30808-6/283110735_3141354816102047_6382796195322754405_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=E3UO4ylwpI8AX-5qvYl&_nc_ht=scontent.fccu26-1.fna&oh=00_AfAUnDmgEIFNAQs8fvWYzhlyvB82-yOgSBlCxlR0dBLuCA&oe=64A1F965"
+              src={prof}
               alt="Profile image"
             />
           </div>
@@ -30,8 +31,7 @@ const About = () => {
               A Frontend Developer
             </div>
             <div className="text-[#ddd] my-10">
-              I am a developer based in Kolkata, India. I have 1.5 years
-              experience in Blockchain and Front-end Development. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat incidunt nisi ullam quos modi ut quisquam sit, sint quaerat libero corporis, ea ex minus nam, eaque labore asperiores recusandae?
+              Hi, I am a developer based in Kolkata, India. I am a skilled Front-End Developer with 1.5 years of expertise in crafting captivating user interfaces. Additionally, I possess hands-on experience in Blockchain development. Passionate about merging technology with creativity, I thrive on delivering seamless web experiences and exploring innovative solutions in the world of decentralized applications.
             </div>
             <div className="flex flex-row justify-center ">
               <div className="p-5">

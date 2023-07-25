@@ -1,44 +1,42 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import "./styles.css";
-import { ImCross } from "react-icons/im";
 
 const Projects = () => {
-  const [showModal, setShowModal] = useState(false);
   const Lists = [
     {
       id: "c1",
-      name: "Paysum",
-      smallDetails:
-        "Make your payments easier with PaySum - Transfer remittance now, 0 Fees 0 delay.",
+      name: "Peepol Human Club",
+
       details:
-        "Payum is a project that aims to change the situation of remmitance in the cureent finantial world. Some more details about paysum, and maybe even more details, if i can figure out some.",
+        "The alien race that protected humanity for centuries from the shadows have now made themselves known. The fate of our entire world is going to change - and you can be a part of it! ",
+      liveLink: "https://peepolshowcase.netlify.app",
     },
     {
       id: "c2",
       name: "Paysum",
-      smallDetails:
-        "Make your payments easier with PaySum - Transfer remittance now, 0 Fees 0 delay.",
+
       details:
-        "Payum is a project that aims to change the situation of remmitance in the cureent finantial world. Some more details about paysum, and maybe even more details, if i can figure out some.",
+        "Payum was a project to change the situation of remmitance in the cureent finantial world.The dream was to make a system where you can send money anywhere in the world, with any currency without delay.",
+      liveLink: "https://www.paysum.org/",
     },
     {
       id: "c3",
-      name: "Paysum",
-      smallDetails:
-        " Make your payments easier with PaySum - Transfer remittance now, 0 Fees 0 delay",
+      name: "Api Showcase",
+
       details:
-        "Payum is a project that aims to change the situation of remmitance in the cureent finantial world. Some more details about paysum, and maybe even more details, if i can figure out some.",
+        "An app with 5 seperate mini-apps. Here you can check weather, get recipies, know about Harry Potter, take part in a trivia game, or you can look at cats as long as you want.",
+      liveLink: "https://apishowcase0121.netlify.app",
     },
     {
       id: "c4",
-      name: "Paysum",
-      smallDetails:
-        "Make your payments easier with PaySum - Transfer remittance now, 0 Fees 0 delay.",
+      name: "Anihilation NFT Marketplace",
+
       details:
-        "Payum is a project that aims to change the situation of remmitance in the cureent finantial world. Some more details about paysum, and maybe even more details, if i can figure out some.",
+        "A NFT Marketplace tied to the Annihilation mobile game, where users can buy and sell the nfts they own in two different chains with two different currencies.",
+      liveLink: "https://annihilationmarketplace.netlify.app",
     },
   ];
+
   return (
     <>
       <motion.div
@@ -48,97 +46,43 @@ const Projects = () => {
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         className="projects text-white"
       >
-        <div className="flex flex-col  ">
+        <div className="flex justify-center">
           <div className="text-5xl font-semibold sm:text-6xl xl:text-6xl ">
             My Projects
           </div>
-
-          <div className="main mt-20 sm:mt-20 ">
-            {Lists.map((list) => (
-              <>
-                {/*  h-100 w-100 */}
-                <div
-                  className="card h-100 w-100 md:h-200 md:w-200 rounded-lg pt-10 "
-                  id={list.id}
-                  onClick={() => setShowModal(true)}
-                >
-                  <div className="text-2xl font-semibold">
-                  {list.name}
-
-                  </div>
-                  <div className="mt-6">{list.smallDetails}</div>
-                </div>
-                {showModal ? (
-                  <>
-                    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                      <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                        {/*content*/}
-                        <div className=" rounded-lg shadow-lg relative flex flex-col w-full outline-none bg-gray-700 bg-opacity-20 focus:outline-none backdrop-blur-lg border-slate-700 border-2">
-                          {/*header*/}
-                          <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                            <h3 className="text-5xl text-white font-semibold">
-                              {list.name}
-                            </h3>
-                            <button
-                              className="p-1 ml-auto bg-transparent border-0 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                              onClick={() => setShowModal(false)}
-                            >
-                              <span className="bg-transparent text-2xl block outline-none focus:outline-none text-white">
-                                <ImCross style={{ color: "#ff0000" }} />
-                              </span>
-                            </button>
-                          </div>
-                          {/*body*/}
-                          <div className="relative p-6 flex-auto">
-                            <p className="my-4 text-slate-400 text-lg leading-relaxed">
-                              {list.details}
-                            </p>
-                          </div>
-                          {/*footer*/}
-                          <div className="flex items-center justify-between p-6 border-t border-solid rounded-b">
-                            <a
-                              rel="noopener noreferrer"
-                              href="https://github.com/itssaptarshi"
-                              target="_blank"
-                            >
-                              <button className="learn-more" type="button">
-                                <span className="circle" aria-hidden="true">
-                                  <span className="icon arrow"></span>
-                                </span>
-                                <span className="button-text">Github</span>
-                              </button>
-                            </a>
-                            <a
-                              rel="noopener noreferrer"
-                              href="https://www.paysum.org/"
-                              target="_blank"
-                            >
-                              {/* <button
-                                className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                type="button"
-                              >
-                                Visit Live
-                              </button> */}
-                               <button data-text="Awesome" className="button">
-                    <span className="actual-text">
-                      &nbsp;&nbsp;See&nbsp;Live&nbsp;
-                    </span>
-                    <span className="hover-text" aria-hidden="true">
-                      &nbsp;&nbsp;See&nbsp;Live&nbsp;
-                    </span>
-                  </button>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-                  </>
-                ) : null}
-              </>
-            ))}
-          </div>
         </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between mt-10">
+          {Lists.map((list, id) => (
+            <div key={id}>
+              <div className="card  m-5">
+                <div className="content">
+                  <p className="heading">{list.name}</p>
+                  <p className="para">{list.details}</p>
+                  <div className="flex">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href={list.liveLink}
+                      className="mx-5"
+                    >
+                      <button className="btn">Check Live</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/itssaptarshi?tab=repositories"
+        >
+          <button className="btn mb-20 mt-5">
+            Please check my github for other projects
+          </button>
+        </a>
       </motion.div>
     </>
   );

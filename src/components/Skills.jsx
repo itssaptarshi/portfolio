@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
 import skills from "./SklillList";
+import { SiTypescript,SiGithub } from "react-icons/si";
+import { DiWordpress,DiPython } from "react-icons/di";
 
 const Skills = () => {
   return (
@@ -25,18 +27,41 @@ const Skills = () => {
               {skills.map((skill) => (
                 <>
                   <div className="flex items-center justify-center rounded-lg  flex-col m-4 px-8 py-4 bg-gray-700 border-2 border-gray-300">
-                    
-                        <Player
-                          autoplay
-                          loop
-                          src={skill.src}
-                          style={{ height:'150px' , width:'100px', scale: "100%" }}
-                        />
-                        <div className="text-white">{skill.name}</div>
-                     
+                    <Player
+                      autoplay
+                      loop
+                      src={skill.src}
+                      style={{ height: "150px", width: "100px", scale: "100%" }}
+                    />
+                    <div className="text-white">{skill.name}</div>
                   </div>
                 </>
               ))}
+              <div className="flex items-center justify-center rounded-lg  flex-col m-4 px-8 py-4 bg-gray-700 border-2 border-gray-300">
+                <SiTypescript
+                  style={{ height: "150px", width: "100px", scale: "80%", color:'blue' }}
+                />
+                <div className="text-white">TypeScript</div>
+              </div>
+              <div className="flex items-center justify-center rounded-lg  flex-col m-4 px-8 py-4 bg-gray-700 border-2 border-gray-300">
+                <SiGithub
+                  style={{ height: "150px", width: "100px", scale: "80%", color:'white' }}
+                />
+                <div className="text-white">Github</div>
+              </div>
+              <div className="flex items-center justify-center rounded-lg  flex-col m-4 px-8 py-4 bg-gray-700 border-2 border-gray-300">
+                <DiWordpress
+                  style={{ height: "150px", width: "100px", scale: "100%", color:'white' }}
+                />
+                <div className="text-white">Wordpress</div>
+              </div>
+              <div className="flex items-center justify-center rounded-lg  flex-col m-4 px-8 py-4 bg-gray-700 border-2 border-gray-300">
+                <DiPython
+                  style={{ height: "150px", width: "100px", scale: "80%", color:'blue' }}
+                />
+                <div className="text-white">Python</div>
+              </div>
+             
             </div>
           </div>
         </div>

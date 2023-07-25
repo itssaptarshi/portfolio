@@ -48,6 +48,18 @@ const skills = [
     name: "ERC721",
     src: "https://assets9.lottiefiles.com/private_files/lf30_iyicd2xy.json",
   },
+  {
+    name: "Three.js",
+    src: "https://lottie.host/46c98b65-3de1-4dcb-b077-6812727e0b28/MufrgoEHbz.json",
+  },
+  {
+    name: "React-Three-Fiber",
+    src: "https://lottie.host/efe9f49a-6c68-4628-87ae-e4a71a73be43/8wlwkk8W3Q.json",
+  },
+  {
+    name: "Strapi",
+    src: "https://lottie.host/b3075311-5c6c-457e-bfa3-010488c2a35c/k7zzhmZGVA.json",
+  },
 ];
 
 export default skills;
